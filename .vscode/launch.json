@@ -1,0 +1,23 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/ch.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "device": "STM32F103C8T6",
+            "configFiles": [
+                "../tools/openocd/scripts/interface/stlink.cfg",
+                "../tools/openocd/scripts/target/stm32f1x.cfg"
+            ],
+            "svdFile": "../STM32F103.svd"
+        }
+    ]
+}
