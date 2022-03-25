@@ -8,6 +8,10 @@
         "stddef.h": "c",
         "board.h": "c",
         "osalconf.h": "c",
-        "cmparams.h": "c"
+        "cmparams.h": "c",
+        "chtrace.h": "c",
+        "chport.h": "c",
+        "chcore.h": "c",
+        "stm32f1xx.h": "c"
     }
 }

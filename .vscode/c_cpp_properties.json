@@ -3,17 +3,56 @@
         {
             "name": "STM32F1",
             "includePath": [
-                "${workspaceFolder}/../ChibiOS_21.11.1/**"
+                "${workspaceFolder}/./cfg/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/license/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/portability/GCC/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/startup/ARMCMx/compilers/GCC/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/startup/ARMCMx/devices/STM32F1xx/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/ext/ARM/CMSIS/Core/Include/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/ext/ST/STM32F1xx/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/include/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/common/ARMCMx/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/STM32F1xx/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/CANv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/DACv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/DMAv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/GPIOv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/I2Cv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/RTCv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/SDIOv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/SPIv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/SYSTICKv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/TIMv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/USART/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/USARTv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/USBv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/ports/STM32/LLD/xWDGv1/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/boards/OLIMEX_STM32_P103/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/hal/osal/rt-nil/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/rt/include/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/oslib/include/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/portability/GCC/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/ports/ARM-common/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/common/ports/ARMv7-M/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/os/test/include/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/test/rt/source/test/**",
+                "${workspaceFolder}/../ChibiOS_21.11.1/test/oslib/source/test/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "USE_HAL_DRIVER",
+                "STM32F103x8"
             ],
             "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-arm"
+            "intelliSenseMode": "gcc-arm",
+            "compilerArgs": [
+                "-mcpu=cortex-m0",
+                "-mthumb"
+            ]
         }
     ],
     "version": 4
